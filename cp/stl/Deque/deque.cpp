@@ -1,7 +1,3 @@
-// ************************************************
-//  STL - DEQUE CONTAINER
-//  STL-Deque.cpp
-// ************************************************
 #include <iostream>
 #include <deque>
 
@@ -9,10 +5,10 @@ using namespace std;
 
 int main()
 {
-  deque<string> minhaFila;  
+  deque<string> minhaFila;
   deque<string>::iterator w;
 
-  minhaFila.push_back("Alguém"); 
+  minhaFila.push_back("Alguém");
   minhaFila.push_back("Fulano");
   minhaFila.push_front("Beltrano");
 
@@ -20,7 +16,7 @@ int main()
   minhaFila[1] = "Ciclano";
 
   // vai imprimir {Beltrano, Ciclano e Fulano}
-  for ( w = minhaFila.begin(); w != minhaFila.end(); w++ )
+  for (w = minhaFila.begin(); w != minhaFila.end(); w++)
     cout << "A fila está assim...: " << *w << endl;
 
   return 0;
