@@ -8,9 +8,9 @@ void dfs(set<int>&visited, int vertex){
     if(visited.find(vertex) == visited.end()){
         cout << vertex << " ";
         visited.insert(vertex);
-        for(list<int>::iterator it = graph[vertex].begin(); it != graph[vertex].end(); it++)
+        for(auto x:graph[vertex])
         {
-            dfs(visited, *it);
+            dfs(visited, x);
         }
     }
 }
