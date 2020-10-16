@@ -38,7 +38,7 @@ int main()
 
         cout << i << " : ";
         for(it = graph[i].begin(); it != graph[i].end(); it++){
-            cout << *it << " - ";
+            cout << *it << " ";
         }
         cout << endl;
     }
