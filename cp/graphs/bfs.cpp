@@ -4,8 +4,27 @@ using namespace std;
 
 vector< list<int> > graph(5);
 
-void bfs(){
-    
+void bfs(int node){
+    queue<int> q;
+    vector<int> v;
+    int aux;
+    q.push(node);
+    v.push_back(node);
+
+    while (!q.empty())
+    {
+        aux = q.front();
+        q.pop();
+        cout << aux << " ";
+
+        for(auto x:graph[aux]){
+            if(find(v.begin(),v.end(), x) == v.end()){
+                v.push_back(x);
+                q.push(x);
+            }
+        }
+
+    }
 }
 
 int main()
@@ -18,5 +37,8 @@ int main()
     graph[3] = {0,1,2};
     graph[4] = {1,2};
 
+    bfs(0);
+
+    cout << endl;
     return 0;
 }
