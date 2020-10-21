@@ -8,7 +8,6 @@ Chamaremos essas variaveis de X,Y,W e Z.
 
 Devido a atribuição multipla, em Python 3 podemos utilizar o input().split(), que dividirá nossa entrada onde houver um espaço. E para converter a entrada para um tipo especifico podemos utilizar um map.
 
-[Veja o codigo](int.py)
 ```python
 x, y, w, z = map(int, input().split())
 
@@ -16,8 +15,6 @@ print(f'x:{x} y:{y} w:{w} z:{z}')
 ```
 
 Já em C++ o cin ajuda fazendo o trabalho do .split(), além de dividir onde houver um espaço ele também divide onde há uma quebra de linha.
-
-[Veja o codigo](int.cpp)
 
 ```cpp
 #include <bits/stdc++.h>

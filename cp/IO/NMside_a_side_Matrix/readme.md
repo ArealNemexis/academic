@@ -10,7 +10,7 @@ Suponhamos que um problema diga que informará na primeira linha N e M, e que na
 
 > 10 8 3
 
-Em [C++](c.cpp) é possivel declarar a matrix com o tamanho máximo da entrada, e depois preencher e navegar utilizando os ranges n,m. Não é o que economiza mais memória, mas funciona, tome cuidado com segmentation fault.
+Em C++ é possivel declarar a matrix com o tamanho máximo da entrada, e depois preencher e navegar utilizando os ranges n,m. Não é o que economiza mais memória, mas funciona, tome cuidado com segmentation fault.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -40,7 +40,7 @@ int main(){
 ```
 
 
-Em [Python 3](p.py) é sempre mais tranquilo trabalhar com essas estruturas, porém é bem menos performatico que em C++.
+Em Python 3 é sempre mais tranquilo trabalhar com essas estruturas, porém é bem menos performatico que em C++.
 
 ```Python
 n,m = map(int,input().split())

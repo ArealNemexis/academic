@@ -21,7 +21,7 @@ Além disso ele pede que para cada linha você devolva a sequencia ao contrário
 Tanto em Python como em C++ serão necessários laços de repetição.
 Veja os codigos.
 
-[Python 3](p.py)
+Python 3
 ```python
 for _ in range(int(input())):
     a,b,c = map(int, input().split())
@@ -29,7 +29,7 @@ for _ in range(int(input())):
     print(c,b,a)
 ```
 
-[C++](c.cpp)
+C++
 ```cpp
 #include <bits/stdc++.h>
 
