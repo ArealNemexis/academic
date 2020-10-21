@@ -7,9 +7,10 @@ Sabendo disso é notável que um problema, principalmente para iniciantes, é re
 
 Portanto saber como receber dados organizados de maneiras diferentes te garante vantagens sobre os outros competidores.
 
-Nesse repositório serão mostradas alguns exemplos de como receber esses dados, os exemplos serão demonstrados tanto em C++ quanto Python 3.
+Nesse repositório serão mostrados alguns exemplos de como receber esses dados, os exemplos serão demonstrados tanto em C++ quanto Python 3.
 
 # Sumário
 
 * [Variaveis lado a lado](side_a_side/readme.md)
+* [N Variaveis lado a lado](Nside_a_side/readme.md)
 
