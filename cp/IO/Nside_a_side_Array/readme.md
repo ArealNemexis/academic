@@ -1,4 +1,4 @@
-# Variaveis lado a lado para um Array
+# N Variaveis lado a lado para um Array
 
 Suponhamos que um problema informe um N e que na proxima linha ele informe N elementos separados por espaço.
 
