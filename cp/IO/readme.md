@@ -1,4 +1,4 @@
-# Inputs e Outputs em programação competitiva.
+# Tipos de entrada em programação competitiva.
 
 Para resolver qualquer problema computacional são necessarias 2 coisas: um conjunto de entradas e o conjunto de respectivas saidas para essas entradas.
 

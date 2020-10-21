@@ -22,5 +22,29 @@ Tanto em Python como em C++ serão necessários laços de repetição.
 Veja os codigos.
 
 [Python 3](p.py)
+```python
+for _ in range(int(input())):
+    a,b,c = map(int, input().split())
+
+    print(c,b,a)
+```
 
 [C++](c.cpp)
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int a,b,c,n;
+
+    cin >> n;
+    while(n--){
+        cin >> a >> b >> c;
+
+        cout << c << " " << b << " " << a << "\n";
+    }
+
+    return 0;
+}
+```
