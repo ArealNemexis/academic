@@ -3,6 +3,7 @@
 Suponhamos que um problema informe um N e que na proxima linha ele informe N elementos separados por espaço.
 
 > 5
+
 > 1 2 3 4 5
 
 Ao analisar o problema você percebe que precisa guardar os elementos em um Array.
