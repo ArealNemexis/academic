@@ -12,5 +12,6 @@ Nesse repositório serão mostrados alguns exemplos de como receber esses dados,
 # Sumário
 
 * [Variaveis lado a lado](side_a_side/readme.md)
+    * [Variaveis lado a lado para um array](Nside_a_side_Array/readme.md)
 * [N Variaveis lado a lado](Nside_a_side/readme.md)
 
