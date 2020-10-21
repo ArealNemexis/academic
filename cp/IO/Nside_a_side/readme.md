@@ -23,4 +23,4 @@ Veja os codigos.
 
 [Python 3](p.py)
 
-[C++](c.py)
+[C++](c.cpp)
