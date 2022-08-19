@@ -13,21 +13,24 @@ int main(){
     long long int casos[] = {1,5,15,20,25,30,35,40,45,50};
     int tamanho = sizeof(casos)/sizeof(casos[0]);
 
-    printf("\n Tempos de execução em forma recursiva\n");
-    for(int i = 0; i < tamanho; i++){
-        printf("%lld-esimo termo: ", casos[i]);
-        t1 = omp_get_wtime();
-        fibo_recursivo(casos[i]);
-        t2 = omp_get_wtime();
+    // printf("\n Tempos de execução em forma recursiva\n");
+    // for(int i = 0; i < tamanho; i++){
+    //     printf("%lld-esimo termo: ", casos[i]);
+    //     t1 = omp_get_wtime();
+    //     long long int result =fibo_recursivo(casos[i]);
+    //     printf("result %lld\n", result);
+    //     t2 = omp_get_wtime();
 
-        printf("%lf s\n", t2-t1);
-    }
+    //     printf("%lf s\n", t2-t1);
+    // }
 
     printf("\n Tempos de execução em forma iterativa\n");
     for(int i = 0; i < tamanho; i++){
         printf("%lld-esimo termo: ", casos[i]);
         t1 = omp_get_wtime();
-        fibo_iterativo(casos[i]);
+        long long int result = fibo_iterativo(casos[i]);
+        printf("result %lld\n", result);
+
         t2 = omp_get_wtime();
 
         printf("%lf s\n", t2-t1);
@@ -37,7 +40,9 @@ int main(){
     for(int i = 0; i < tamanho; i++){
         printf("%lld-esimo termo: ", casos[i]);
         t1 = omp_get_wtime();
-        fibo_matricial(casos[i]);
+        long long int result = fibo_matricial(casos[i]);
+        printf("result %lld\n", result);
+
         t2 = omp_get_wtime();
 
         printf("%lf s\n", t2-t1);
