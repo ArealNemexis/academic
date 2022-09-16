@@ -30,8 +30,6 @@ int main()
         vertices[a].tam_lista_adj++;
         vertices[b].lista_adj[vertices[b].tam_lista_adj] = a;
         vertices[b].tam_lista_adj++;
-
-
     }
 
 
