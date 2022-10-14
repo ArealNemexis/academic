@@ -1,5 +1,8 @@
-#include <iostream>
-#include <deque>
+#include <bits/stdc++.h>
+#define _                         \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);
+#define endl '\n'
 
 using namespace std;
 
@@ -23,7 +26,7 @@ int main()
 }
 
 /**
- * Deque contêiner seqüêncial que fornece recursos de um vector e de uma list em um mesmo objeto.
+ * Deque contêiner sequêncial que fornece recursos de um vector e de uma list em um mesmo objeto.
  * Ele fornece acesso a seus elementos através de iteradores e do operador [] (como um vector), 
  * e permite ler e modificar os elementos da mesma forma que uma list 
  * (no entanto, alguns métodos não estão disponíveis). 
