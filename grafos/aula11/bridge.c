@@ -167,6 +167,7 @@ void dfs(vertice *vertices, int qtd_vertices, int raiz, int pai)
         {
             if (vertices[filhoAtual].visitado == 1 && filhoAtual != pai)
             {
+                // printf("backedge %d %d\n", raiz, filhoAtual);
                 vertices[raiz].lower = min(vertices[raiz].lower, vertices[filhoAtual].in);
             }
         }
