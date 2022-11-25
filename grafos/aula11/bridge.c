@@ -155,17 +155,17 @@ void dfs(vertice *vertices, int qtd_vertices, int raiz, int pai)
     for (i = 0; i < vertices[raiz].tam_lista_adj; i++)
     {
         int filhoAtual = vertices[raiz].lista_adj[i];
-        if (filhoAtual == pai)
+        if (filhoAtual == pai) // se é o pai n faz nada
         {
             continue;
         }
-        if (vertices[filhoAtual].visitado == 0)
+        if (vertices[filhoAtual].visitado == 0) // se o filho n foi visitado dfs segue o baile, forward edge
         {
             dfs(vertices, qtd_vertices, filhoAtual, raiz);
         }
         else
         {
-            if (vertices[filhoAtual].visitado == 1 && filhoAtual != pai)
+            if (vertices[filhoAtual].visitado == 1 && filhoAtual != pai) // backedge
             {
                 // printf("backedge %d %d\n", raiz, filhoAtual);
                 vertices[raiz].lower = min(vertices[raiz].lower, vertices[filhoAtual].in);
