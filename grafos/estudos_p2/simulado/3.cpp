@@ -2,7 +2,7 @@
 
 using namespace std;
 
-typedef pair<int,int> ii;
+typedef pair<int, int> ii;
 
 const int N = 100;
 const int infinito = 1e9;
@@ -25,15 +25,26 @@ void dijkstra(int s);
 int main(int argc, char const *argv[])
 {
     int n, m, i;
-    int a,b, peso;
+    int a, b, peso;
 
     scanf("%d %d", &n, &m);
 
-    for(i = 0; i < m; i++){
+    for (i = 0; i < m; i++)
+    {
         scanf("%d;%d;%d", &a, &b, &peso);
-        adj[a].push_back({b,peso});
-        adj[b].push_back({a,peso});
+        adj[a].push_back({b, peso});
+        adj[b].push_back({a, peso});
     }
+    int r = 0;
+    // for (auto g : adj)
+    // {
+        
+    //     for (auto x : g)
+    //     {
+    //         cout << r << " " << x.first << " " << x.second << endl;
+    //     }
+    //     r++;
+    // }
 
     dijkstra(5);
     for(int i = 0; i < n; i++) {
@@ -42,23 +53,28 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-
-void dijkstra(int s){
+void dijkstra(int s)
+{
     dist.assign(N, infinito);
     visited.assign(N, false);
     dist[s] = 0;
-    priority_queue<ii, vector<ii>, greater<ii> >pq;
-    pq.push({0,s});
+    priority_queue<ii, vector<ii>, greater<ii>> pq;
+    pq.push({0, s});
 
-    while(!pq.empty()){
+    while (!pq.empty())
+    {
         int u = pq.top().second;
         pq.pop();
-        if(visited[u]) continue;
+        
+        if (visited[u])
+            continue;
         visited[u] = true;
 
-        for(auto i: adj[u]){
+        for (auto i : adj[u])
+        {
             int v = i.first, w = i.second;
-            if(dist[v] > dist[u] + w){
+            if (dist[v] > dist[u] + w)
+            {
                 dist[v] = dist[u] + w;
                 pq.push({dist[v], v});
             }
